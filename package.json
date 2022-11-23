@@ -1,0 +1,27 @@
+{
+  "name": "goit-node-hw01-cli-application",
+  "description": "Шаг 1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladimirSt13/goit-node-hw01-cli-application.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladimirSt13/goit-node-hw01-cli-application/issues"
+  },
+  "homepage": "https://github.com/VladimirSt13/goit-node-hw01-cli-application#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "nanoid": "^4.0.0"
+  }
+}
