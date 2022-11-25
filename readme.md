@@ -8,7 +8,7 @@ node index.js --action list
 
 node index.js --action get --id 5
 
-![get](https://i.ibb.co/mRLd4pC/screen-2.png)
+[get](https://ibb.co/nfbs8Yv) !(https://i.ibb.co/mRLd4pC/screen-2.png)
 
 # Добавялем контакт
 
