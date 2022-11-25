@@ -1,6 +1,5 @@
-import { listContacts, getContactById, removeContact, addContact } from './contacts.mjs';
-// const {argv} = require('yargs').argv;
-import { argv } from 'yargs';
+const { listContacts, getContactById, removeContact, addContact } = require('./contacts');
+const { argv } = require('yargs');
 const { Command } = require('commander');
 const program = new Command();
 
@@ -24,11 +23,14 @@ async function invokeAction({ action, id, name, email, phone }) {
       break;
 
     case 'add':
-      console.log(await addContact(name, email, phone));
+      await addContact(name, email, phone);
+      console.table(await listContacts());
       break;
 
     case 'remove':
-      console.log(await removeContact(id));
+      await removeContact(id);
+      console.table(await listContacts());
+
       break;
 
     default:
