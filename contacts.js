@@ -23,8 +23,6 @@ async function removeContact(contactId) {
 
   const isExistContactInDb = contacts.findIndex(contact => contact.id === contactId.toString());
 
-  console.log(isExistContactInDb);
-
   if (isExistContactInDb === -1) {
     console.log(`There is no contact with id ${contactId}`);
     return contacts;
