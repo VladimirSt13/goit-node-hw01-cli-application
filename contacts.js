@@ -39,6 +39,7 @@ async function removeContact(contactId) {
   } catch (error) {
     console.error(error);
   }
+0
 
   return updatedContacts;
 }
@@ -51,6 +52,7 @@ async function addContact(name, email, phone) {
   );
 
   if (isExistContactInDb > -1) {
+    console.log(`There is exist contact with name: ${name} in db`);
     return contacts;
   }
 
